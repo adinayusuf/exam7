@@ -33,4 +33,4 @@ class ChoiceDeleteView(DeleteView):
     template_name = 'choices/delete_choices.html'
 
     def get_success_url(self):
-        return reverse("view_poll", kwargs={"pk": self.object.poll.pk})
+        return reverse("detail_poll", kwargs={"pk": self.object.poll.pk})

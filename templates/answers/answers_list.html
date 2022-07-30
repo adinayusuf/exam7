@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Список ответов{% endblock %}
+{% block nav %}
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="{% url "view_poll" %}">Назад</a>
+    </li>{% endblock %}
+{% block content %}
+    <br>
+    <h1 class="text-center">Список ответов:</h1>
+    {% for answer in answers %}
+        <br>
+        <div class="card" style="max-width: 400px;">
+            <div class="card-body">
+                <h5 class="card-title text-success">{{ answer.poll.question }}</h5>
+                <p class="card-title">Ответ: {{ answer.choice.option_text }}</p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
