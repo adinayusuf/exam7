@@ -2,19 +2,20 @@
 {% block title %}Список вопросов{% endblock %}
 
 {% block content %}
-
-<h1>Список вопросов!</h1>
+    <br>
+<h1 class="text-center">Список вопросов</h1>
 {% for poll in polls %}
     <br>
-    <div class="card" style="max-width: 400px;">
+    <div class="card text-success" style="max-width: 400px;">
         <div class="card-body">
-            <h5 class="card-title"> Опрос: {{ poll.question }}</h5>
-            <a href="{% url "detail_poll" poll.pk %}" class="btn btn" style="float: right">
+            <h5 class="card-title"> {{ poll.question }}</h5>
+            <br>
+            <a href="{% url "detail_poll" poll.pk %}" class="btn btn-info" style="float: right">
                 Детальный просмотр </a>
         </div>
     </div>
 {% endfor %}
-
+    <br>
     {% if is_paginated %}
         {% include 'partial/pagination.html' %}
     {% endif %}

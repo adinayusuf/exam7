@@ -13,13 +13,34 @@
 {% endblock %}
 {% block content %}
     <br>
-    <div class="card border-info mb-3" style="max-width: 25rem;">
+    <div class="card border-primary mb-5" style="max-width: 25rem;">
         <div class="card-body ">
             <h5 class="card-title"> Опрос: {{ poll.question }}</h5>
             <p class="card-text"> Время создания: {{ poll.created_at }}</p>
         </div>
         <div class="card-footer bg-transparent border-info">
-            <a href="{% url "view_poll" %}" class="btn btn" style="float: right">Назад</a></div>
+            <a href="{% url "view_poll" %}" class="btn btn-info" style="float: right">Назад</a></div>
     </div>
+    <br>
 
+    <h5>Список вариантов!</h5>
+    {% for choice in choices.all %}
+        <br>
+        <div class="card" style="max-width: 400px;">
+            <div>
+                <p class="card-title"> Вариант: {{ choice.option_text }}</p>
+                <a href="{% url "choice_delete" choice.pk %}" class="btn btn-info" style="float: right">
+                                        Удалить</a>
+                <a href="{% url "choice_update" choice.pk %}" class="btn btn-info" style="float: right">
+                                        Редактировать</a>
+
+            </div>
+        </div>
+    {% endfor %}
+    <br>
+                <h5>Создание варианта: </h5>
+    <form action="{% url "choice_create" poll.pk %}" method="post">
+        {% include 'partial/form.html' with button_text="Создать" %}
+    </form>
+    <br>
 {% endblock %}

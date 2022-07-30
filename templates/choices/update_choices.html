@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Редактирование варианта{% endblock %}
+{% block content %}
+
+    <h1>Редактирование варианта</h1>
+    <form method="post" action="{% url "choice_delete" choice.pk %} ">
+        {% include "partial/form.html" with button_text="Редактировать" %}
+
+        <a href="{% url "view_poll" %}" class="btn btn-info">Назад на главную</a>
+    </form>
+{% endblock %}
+

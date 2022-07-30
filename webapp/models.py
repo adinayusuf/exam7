@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Poll(models.Model):
     question = models.TextField(max_length=2000, verbose_name='Опрос')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
