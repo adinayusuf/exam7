@@ -1,23 +1,24 @@
 {% extends 'base.html' %}
-{% block nav %}    <li class="nav-item">
+{% block nav %}
+    <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="{% url "view_poll" %}">Назад</a>
     </li>{% endblock %}
 {% block title %}Список вопросов{% endblock %}
 
 {% block content %}
-      <br>
+    <br>
     <div class="card" style="max-width: 500px;">
         <div class="card-body">
             <h5 class="card-title text-success">{{ poll.question }}</h5>
-    <br>
-    <form method="post">
-        {% for choice in poll.choices.all %}
-            <input required type="radio" id="{{ choice.id }}" name="answer" value="{{ choice.id }}">
-            <label for="{{ choice.id }}" class=" text-black-50">{{ choice.option_text }}</label>
             <br>
-        {% endfor %}
-    <br>
-        {% include 'partial/form.html' with  button_text="Ответить" %}
-    </form>
-    </div>
+            <form method="post">
+                {% for choice in poll.choices.all %}
+                    <input required type="radio" id="{{ choice.id }}" name="answer" value="{{ choice.id }}">
+                    <label for="{{ choice.id }}" class=" text-black-50">{{ choice.option_text }}</label>
+                    <br>
+                {% endfor %}
+                <br>
+                {% include 'partial/form.html' with  button_text="Ответить" %}
+            </form>
+        </div>
 {% endblock %}

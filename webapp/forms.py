@@ -1,6 +1,6 @@
 from django import forms
 
-from webapp.models import Poll, Choice
+from webapp.models import Poll, Choice, Answer
 
 
 class PollForm(forms.ModelForm):
@@ -14,5 +14,4 @@ class ChoiceForm(forms.ModelForm):
         model = Choice
         fields = ['option_text']
         widgets = {
-            'option_text': forms.Textarea(attrs={'rows': 2, 'cols': 35}, )
-        }
+            'option_text': forms.Textarea(attrs={'rows': 2, 'cols': 35})}

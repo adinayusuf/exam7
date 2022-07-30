@@ -3,20 +3,20 @@
 
 {% block content %}
     <br>
-<h1 class="text-center">Список вопросов</h1>
-{% for poll in polls %}
-    <br>
-    <div class="card text-success" style="max-width: 400px;">
-        <div class="card-body text-center">
-            <h5 class="card-title"> {{ poll.question }}</h5>
-            <br>
-        </div>
-                <a href="{% url "detail_poll" poll.pk %}" class="btn btn-info" style="float: right">
+    <h1 class="text-center">Список вопросов</h1>
+    {% for poll in polls %}
+        <br>
+        <div class="card text-success" style="max-width: 400px;">
+            <div class="card-body text-center">
+                <h5 class="card-title"> {{ poll.question }}</h5>
+                <br>
+            </div>
+            <a href="{% url "detail_poll" poll.pk %}" class="btn btn-info" style="float: right">
                 Детальный просмотр </a>
             <a href="{% url "answer" poll.pk %}" class="btn btn-success" style="float: right">
                 Пройти</a>
-    </div>
-{% endfor %}
+        </div>
+    {% endfor %}
     <br>
     {% if is_paginated %}
         {% include 'partial/pagination.html' %}

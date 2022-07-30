@@ -6,7 +6,7 @@
     <form method="post" action=" ">
         {% include "partial/form.html" with button_text="Редактировать" %}
 
-        <a href="{% url "view_poll" %}" class="btn btn-info">Назад</a>
+        <a href="{% url "detail_poll" poll.pk %}" class="btn btn-info">Назад</a>
     </form>
 {% endblock %}
 

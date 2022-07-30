@@ -19,11 +19,12 @@
     <div class="card border-primary mb-5" style="max-width: 25rem;">
         <div class="card-body ">
             <h5 class="card-title">{{ poll.question }}</h5>
-            <p class="card-text"> Время создания: {{ poll.created_at }}</p>
-        </div> <br>
+            <p class="card-text"> Время: {{ poll.created_at }}</p>
+        </div>
+        <br>
         <div class="card-footer bg-transparent border-info">
-         <br>
-            <h6>Список вариантов:</h6>
+            <br>
+            <h6>Варианты:</h6>
             {% for choice in choices.all %}
                 <br>
                 <div class="card p-2" style="max-width: 400px;">
@@ -45,6 +46,5 @@
             <br>
         </div>
         <br>
-
 
 {% endblock %}

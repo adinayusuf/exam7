@@ -1,0 +1,497 @@
+[
+{
+    "model": "webapp.poll",
+    "pk": 1,
+    "fields": {
+        "question": "Что нужно Вам сейчас для полного счастья?",
+        "created_at": "2022-07-30T06:08:37.038Z"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 2,
+    "fields": {
+        "question": "А Вы носите очки?",
+        "created_at": "2022-07-30T06:08:53.586Z"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 3,
+    "fields": {
+        "question": "Вы ругаетесь матом?",
+        "created_at": "2022-07-30T06:09:04.690Z"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 4,
+    "fields": {
+        "question": "Зачем люди открывают холодильник?",
+        "created_at": "2022-07-30T06:09:27.887Z"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 5,
+    "fields": {
+        "question": "А Вы делаете по утрам зарядку?)",
+        "created_at": "2022-07-30T06:09:36.082Z"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 6,
+    "fields": {
+        "question": "Умеете пользоваться фотошопом?",
+        "created_at": "2022-07-30T06:09:49.032Z"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 7,
+    "fields": {
+        "question": "Любимое время года?",
+        "created_at": "2022-07-30T06:09:57.625Z"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 8,
+    "fields": {
+        "question": "Любимый школьный предмет?",
+        "created_at": "2022-07-30T06:10:08.928Z"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 9,
+    "fields": {
+        "question": "Хотели бы Вы прыгнуть с парашютом?",
+        "created_at": "2022-07-30T06:10:23.701Z"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 10,
+    "fields": {
+        "question": "Какой самый плохой день недели??",
+        "created_at": "2022-07-30T06:11:51.771Z"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 13,
+    "fields": {
+        "question": "Как дышат морские ежики?",
+        "created_at": "2022-07-30T11:19:07.713Z"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 14,
+    "fields": {
+        "question": "Верите ли Вы в НЛО и пришельцев?",
+        "created_at": "2022-07-30T11:22:25.229Z"
+    }
+},
+{
+    "model": "webapp.poll",
+    "pk": 15,
+    "fields": {
+        "question": "Сколько вы сможете прожить без интернета?",
+        "created_at": "2022-07-30T11:23:46.990Z"
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 1,
+    "fields": {
+        "option_text": "Денег",
+        "poll": 1
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 2,
+    "fields": {
+        "option_text": "Здоровья",
+        "poll": 1
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 3,
+    "fields": {
+        "option_text": "Любви",
+        "poll": 1
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 4,
+    "fields": {
+        "option_text": "Да",
+        "poll": 2
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 5,
+    "fields": {
+        "option_text": "Нет",
+        "poll": 2
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 6,
+    "fields": {
+        "option_text": "Иногда",
+        "poll": 2
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 7,
+    "fields": {
+        "option_text": "Да, ежедневно (через каждое слово)",
+        "poll": 3
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 8,
+    "fields": {
+        "option_text": "Да, постоянно (часто)",
+        "poll": 3
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 9,
+    "fields": {
+        "option_text": "Нет",
+        "poll": 3
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 10,
+    "fields": {
+        "option_text": "Чтобы поесть",
+        "poll": 4
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 11,
+    "fields": {
+        "option_text": "Чтобы подумать",
+        "poll": 4
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 12,
+    "fields": {
+        "option_text": "Да, но очень редко (некогда или забываю)",
+        "poll": 5
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 13,
+    "fields": {
+        "option_text": "Нет",
+        "poll": 5
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 14,
+    "fields": {
+        "option_text": "Да, но на уровне новичка",
+        "poll": 6
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 15,
+    "fields": {
+        "option_text": "Да, профессионально (мастер фотошопа 80 lvl)",
+        "poll": 6
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 16,
+    "fields": {
+        "option_text": "Нет, он мне даром не нужен",
+        "poll": 6
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 18,
+    "fields": {
+        "option_text": "Весна",
+        "poll": 7
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 19,
+    "fields": {
+        "option_text": "Лето",
+        "poll": 7
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 20,
+    "fields": {
+        "option_text": "Осень",
+        "poll": 7
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 25,
+    "fields": {
+        "option_text": "Да",
+        "poll": 9
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 26,
+    "fields": {
+        "option_text": "Нет",
+        "poll": 9
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 27,
+    "fields": {
+        "option_text": "Понедельник",
+        "poll": 10
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 28,
+    "fields": {
+        "option_text": "Вторник",
+        "poll": 10
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 29,
+    "fields": {
+        "option_text": "Среда",
+        "poll": 10
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 30,
+    "fields": {
+        "option_text": "Четверг",
+        "poll": 10
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 31,
+    "fields": {
+        "option_text": "Пятница",
+        "poll": 10
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 32,
+    "fields": {
+        "option_text": "Суббота",
+        "poll": 10
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 38,
+    "fields": {
+        "option_text": "Иформатика",
+        "poll": 8
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 39,
+    "fields": {
+        "option_text": "Математика",
+        "poll": 8
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 40,
+    "fields": {
+        "option_text": "Биология",
+        "poll": 8
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 41,
+    "fields": {
+        "option_text": "Изо",
+        "poll": 8
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 42,
+    "fields": {
+        "option_text": "Воскресенье",
+        "poll": 10
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 43,
+    "fields": {
+        "option_text": "Тупой ворос",
+        "poll": 13
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 44,
+    "fields": {
+        "option_text": "Не поверите! Воздухом!",
+        "poll": 13
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 45,
+    "fields": {
+        "option_text": "Жабрами",
+        "poll": 13
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 46,
+    "fields": {
+        "option_text": "Да",
+        "poll": 14
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 47,
+    "fields": {
+        "option_text": "Нет",
+        "poll": 14
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 48,
+    "fields": {
+        "option_text": "Мы уже среди вас *ЗЛОВЕЩИЙ СМЕХ*",
+        "poll": 14
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 49,
+    "fields": {
+        "option_text": "И дня не проживу",
+        "poll": 15
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 50,
+    "fields": {
+        "option_text": "Нашли чем пугать",
+        "poll": 15
+    }
+},
+{
+    "model": "webapp.choice",
+    "pk": 51,
+    "fields": {
+        "option_text": "За миллион могу два дня",
+        "poll": 15
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 1,
+    "fields": {
+        "poll": 10,
+        "created_at": "2022-07-30T10:14:19.480Z",
+        "choice": 32
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 2,
+    "fields": {
+        "poll": 10,
+        "created_at": "2022-07-30T10:14:39.047Z",
+        "choice": 32
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 5,
+    "fields": {
+        "poll": 7,
+        "created_at": "2022-07-30T10:22:54.970Z",
+        "choice": 19
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 6,
+    "fields": {
+        "poll": 6,
+        "created_at": "2022-07-30T10:24:26.815Z",
+        "choice": 14
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 7,
+    "fields": {
+        "poll": 1,
+        "created_at": "2022-07-30T10:25:45.459Z",
+        "choice": 3
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 8,
+    "fields": {
+        "poll": 3,
+        "created_at": "2022-07-30T10:47:09.835Z",
+        "choice": 8
+    }
+},
+{
+    "model": "webapp.answer",
+    "pk": 9,
+    "fields": {
+        "poll": 15,
+        "created_at": "2022-07-30T11:28:25.160Z",
+        "choice": 50
+    }
+}
+]

@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 {% block title %} Удаление варианта {% endblock %}
 {% block content %}
-<br>
-<form action=" {% url 'choice_delete' choice.pk %}" method="POST">
-    {% csrf_token %}
-    <h2>Вы уверены что хотите удалить вариант: </h2>
-    <h3>{{ choice.option_text }}</h3>
     <br>
-    <button type="submit" class="btn btn-danger">ДА</button>
-<a href="{% url "detail_poll" choice.poll.pk %}" class="btn btn-info">НЕТ</a>
-</form>
+    <form action=" {% url 'choice_delete' choice.pk %}" method="POST">
+        {% csrf_token %}
+        <h2>Вы уверены что хотите удалить вариант: </h2>
+        <br>
+        <h3>{{ choice.option_text }}</h3>
+        <br>
+        <button type="submit" class="btn btn-danger">ДА</button>
+        <a href="{% url "detail_poll" choice.poll.pk %}" class="btn btn-info">НЕТ</a>
+    </form>
 {% endblock %}
 
